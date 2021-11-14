@@ -2,7 +2,6 @@
   "name": "npm-publish-date",
   "description": "See the publish date of NPM packages",
   "version": "1.0.0",
-  "main": "index.js",
   "license": "MIT",
   "repository": "https://github.com/LuanEdCosta/npm-publish-date",
   "homepage": "https://github.com/LuanEdCosta/npm-publish-date",
@@ -19,22 +18,25 @@
   "bugs": {
     "url": "https://github.com/LuanEdCosta/npm-publish-date/issues"
   },
+  "main": "lib/index.js",
   "bin": {
-    "npd": "./index.js"
+    "npd": "./lib/cli.js"
   },
   "scripts": {
-    "dev": "node index.js",
-    "install:windows": "yarn build && yarn global add file:%INIT_CWD%",
-    "install:unix": "yarn build && yarn global add file:$INIT_CWD"
+    "dev": "node lib/cli.js",
+    "install:windows": "yarn global add file:%INIT_CWD%",
+    "install:unix": "yarn global add file:$INIT_CWD",
+    "check:files": "npm pack --dry-run"
   },
   "dependencies": {
-    "chalk": "^4.1.2"
+    "chalk": "^4.1.2",
+    "commander": "^8.3.0"
   },
   "devDependencies": {
     "prettier": "^2.4.1"
   },
   "files": [
-    "index.js*",
+    "lib/*",
     "package.json",
     "LICENSE",
     "README.md"
