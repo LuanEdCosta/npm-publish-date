@@ -6,8 +6,8 @@ labels: ''
 assignees: ''
 ---
 
-- [ ] I have searched for [similar issues](https://github.com/LuanEdCosta/npm-get-publish-date/issues)
-- [ ] I am using the latest version of `npm-get-publish-date`
+- [ ] I have searched for [similar issues](https://github.com/LuanEdCosta/npm-publish-date/issues)
+- [ ] I am using the latest version of `npm-publish-date`
 
 ---
 

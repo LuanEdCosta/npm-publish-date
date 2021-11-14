@@ -1,17 +1,42 @@
 {
-  "name": "npm-get-publish-date",
-  "description": "Get the publish date of NPM packages easily",
+  "name": "npm-publish-date",
+  "description": "See the publish date of NPM packages",
   "version": "1.0.0",
   "main": "index.js",
   "license": "MIT",
+  "repository": "https://github.com/LuanEdCosta/npm-publish-date",
+  "homepage": "https://github.com/LuanEdCosta/npm-publish-date",
   "author": {
     "name": "Luan Eduardo da Costa",
     "url": "https://github.com/LuanEdCosta"
+  },
+  "keywords": [
+    "npm",
+    "publish",
+    "date",
+    "published"
+  ],
+  "bugs": {
+    "url": "https://github.com/LuanEdCosta/npm-publish-date/issues"
+  },
+  "bin": {
+    "npd": "./index.js"
+  },
+  "scripts": {
+    "dev": "node index.js",
+    "install:windows": "yarn build && yarn global add file:%INIT_CWD%",
+    "install:unix": "yarn build && yarn global add file:$INIT_CWD"
   },
   "dependencies": {
     "chalk": "^4.1.2"
   },
   "devDependencies": {
     "prettier": "^2.4.1"
-  }
+  },
+  "files": [
+    "index.js*",
+    "package.json",
+    "LICENSE",
+    "README.md"
+  ]
 }
