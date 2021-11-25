@@ -20,7 +20,7 @@
   },
   "main": "lib/index.js",
   "bin": {
-    "npd": "./lib/cli.js"
+    "npd": "lib/cli.js"
   },
   "scripts": {
     "dev": "node lib/cli.js",
