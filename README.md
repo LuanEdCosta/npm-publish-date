@@ -85,7 +85,7 @@ npd validate eslint redux@latest --all --min-days 2
 
 In October and November of 2021 three very popular NPM packages with millions of downloads were published with embedded malware. Infected computers had all the secrets and keys stolen by the malicious code executed with a simple `npm install`.
 
-The good news is that this type of problem is **usually fixed in a few hours**. The bad news is that the hackers probably will do the same again.
+The good news is that this type of problem **usually resolves itself within hours**. The bad news is that hackers will likely do the same again.
 
 This library was created to protect us from getting hacked while installing NPM packages. Just validating the publish date is not the best protection strategy, but it can save our accounts.
 
