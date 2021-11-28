@@ -1,4 +1,4 @@
-# :timer_clock: npm-publish-date
+# :clock1: npm-publish-date
 
 - :white_check_mark: Validate publish dates to [avoid installing packages with embedded malware](#no_good_man-avoid-installing-packages-with-embedded-malware).
 - :white_check_mark: See the publish date of NPM packages easily.
